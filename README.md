@@ -8,12 +8,12 @@
 
 ## Benefits
 **Surge** brings the following to the table:
--Cost efficiency
--Mobility
--Real-time data analysis 
--Modularity
+Cost efficiency
+Mobility
+Real-time data analysis 
+Modularity
 and most importantly
--Love
+Love
 
 ## Tech Stack
 **Languages:** C++, Python
