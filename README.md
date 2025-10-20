@@ -1,5 +1,6 @@
 ## Table of Contents
 - [Overview](#overview)
+- [Benefits](#benefits)
 - [Tech Stack](#tech-stack)
 - [Folder Layout](#folder-layout)
 - [Contributors](#contributors)
@@ -23,21 +24,7 @@ and most importantly<br>
 ## Folder Layout
 The layout for this project will conform to the standard project layout of ROS2.<br>
 
-**1) Workspace:** //brings all modules together into one environment, contains refreneces to all packages and build tool settings.
-
-**2) Bringup:** //procss of launching entire system coordinately
-
-**3) Description:** //describes what the robot looks like and how it's built
-
-**4) Interface:** //the language all nodes use to communicate
-
-**5) Control:** //the brains; recieves commands from UI then translates to instructions for motors, reads sensors, and updates diagnostics
-
-The crucial files used in these folders are:
-- 'launch/' //starts all nodes at once
-- 'config/' //settings
-- 'CMakeLists.txt/' //instructions for buildup
-- 'package.xml/' //ID card
+**README.md**: documentation that describes the project
 
 ## Contributors
 Mohammed Najmaldeen<br>
