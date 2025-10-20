@@ -30,8 +30,33 @@ Zeyineb Swara<br>
 Savan Taher<br>
 Mahmood Jihad<br>
 Yahya Rubar<br>
+Workspace: //brings all modules together into one environment, contains refreneces to all packages, build tool
+- references all packages
+- build tool settings
+- extentions and other tools used in development
+  
+Bringup: //procss of launching entire system coordinately
+- launch/
+- config/
+- CMakeLists.txt/
+- package.xml/
+  
+Description: //describes what the robot looks like and how it's built
+- CMakeLists.txt/
+- package.xml/
+- urdf/
+- meshes/
 
+Interface: //the language all nodes use to communicate
+- CMakeLists.txt/
+- package.xml/
+- msg/
+- action/
+- srv/
 
-
-
- 
+Control: //the brains; recieves commands from UI then translates to instructions for motors, reads sensors, and updates diagnostics
+- CMakeLists.txt/
+- package.xml/
+- src/
+- config/
+- include/
