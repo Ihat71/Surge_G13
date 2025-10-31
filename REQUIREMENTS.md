@@ -1,12 +1,83 @@
-#REQUIREMENTS.md
+# REQUIREMENTS.md
 
-## Project Requirements Prioritization
+# Requirement Elicitation
+**Chosen elicitation techniques:** Brainstorming and Interviewing
+## Elicitation Documentation
+### Brainstorming Session
 
-### Role: Requirements Prioritization Analyst
+### Interviews With Surgeons
+
+## Raw Requirements List
+
+# Requirements Classification
+## User Requirements
+## System Requirements
+### Functional Requirements
+### Non-Functional Requirements
+
+
+# Structured Specification
+## Functional Requirement 1: Precise Control of Robotic Arms
+**Requirement ID:** FR-01
+
+**Description:**
+The robot must move its arms very accurately and respond quickly to the surgeon’s controls.
+
+**Rationale:**
+Precise movement is important so that the robot does not harm the patient and follows the surgeon’s exact actions.
+- Commands from the surgeon’s controller.
+- Data from sensors that track how the arms move.
+- Smooth and accurate arm movement in real time.
+- The robot must be fully checked and calibrated before the surgery.
+- The arms should be in their correct starting position.
+- There are no delays or sudden movements.
+  
+**Criticality:**
+High mistakes in arm movement could be dangerous for the patient.
+
+## Functional Requirement 2: Real Time Visual Display
+**Requirement ID:** FR-02
+
+**Description:**
+The robot must show a live video of the surgery area so the surgeon can clearly see what is happening.
+
+**Rationale:**
+Good video helps the surgeon make better decisions and avoid errors during surgery.
+- Video from the cameras on the robot.
+- Lighting and zoom settings chosen by the surgeon.
+- A clear and steady video feed on the surgeon’s screen.
+- The ability to zoom in, rotate, or change the camera view easily.
+- Cameras and lights must be working correctly before the surgery.
+- The video has little to no delay
+- The picture stays clear and smooth the whole time.
+ 
+**Criticality:**
+High poor video could make the operation unsafe.
+
+## Functional Requirement 3: Emergency Stop System
+**Requirement ID:** FR-03
+
+**Description:**
+The robot must have a safety system that can stop all movement right away if something goes wrong or if the surgeon presses the emergency stop.
+
+**Rationale:**
+This prevents accidents and keeps the patient and surgeon safe.
+- A signal from the emergency stop button or voice command.
+- Data from sensors that detect any problems, like too much force.
+- An alarm sounds and flashes to warn the team.
+- The robot is running and ready for surgery.
+- Emergency systems must be checked and working.
+- The robot stops safely and cuts power to its motors.
+- It can only restart after the issue is fixed.
+  
+**Criticality:**
+Very High this is the most important feature for safety.
+
+# Project Requirements Prioritization
 **Task:** prioritize all project requirements into 3 categories with reasoning:
 - **Mandatory (M)** - Must be included for the project to function properly.
 - **Nice To Have (N)** - Adds value, and desirable but not essential.
-- **Superfluous (S) ** - Extra and unnecessary for the project goal and feasibility.
+- **Superfluous (S)** - Extra and unnecessary for the project goal and feasibility.
 
 ## 1. Mandatory (M)
 
