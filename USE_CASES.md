@@ -1,6 +1,9 @@
 **SYSTEM:**  Surgical Robot System
+
 **Description:** this document describes the main actors and use cases needed for "Surge".
+
 **ACTORS:** Primary Surgeon, Assistant Surgeon, Tool Shifting System, Visual System, Control System, Security System, GUI System
+
 **USE-CASES:** 
 
  1. ***UC1:*** Arm movements
