@@ -1,13 +1,53 @@
 # REQUIREMENTS.md
 
+## Table of Contents
+- [Requirement Elicitation](#requirement_elicitation)
+- [Requirement Classification](#requirement_classification)
+- [Structured Specification](#structured_specification)
+- [Requirements Prioritization](#project_requirements_prioritization)
+
 # Requirement Elicitation
 **Chosen elicitation techniques:** Brainstorming and Interviewing
 ## Elicitation Documentation
-### Brainstorming Session
+### Brainstorming Session 
 
-### Interviews With Surgeons
+### Interviews With Surgeons 
 
 ## Raw Requirements List
+**Services:**
+- The robotic arms must have the capability of being precise to less than 0.5mm
+- The area of surgery must be displayed in the operating room
+- There must be a safe emergency stop system that is instant
+- Surge must have 3 arms, a base, a computer, a controller, displays and a co-pilot seat
+- The camera must have x-y-z movement and can be fastened in position
+- The joints of Surge must have gold standard brushless stepper motors
+- Surge must have all the tools required for surgery
+- Surge must be able to cycle between the different tools
+- The controller of the arms should be in a way similar to the structure of the arm, with pinchers at the top that would permit the arm to do its action
+- The controller must have gold standard encoders
+- Surge should be fastened to a rail system that allows it to move around the surgery bed
+- The surgeon must have a display in which he can see through the lens of the camera
+- The surgeon must have a pedal system that he can zoom in and out of the camera
+- The surgeon must have a scroll wheel to control the rail
+- Both the surgeon and assistant surgeon need an emergency stop button
+- The assistant surgeon must have a controller to set up the position of the camera
+- The software must provide useful analytics of estimated blood loss, estimated size of the region of surgery and etc
+- The software must have intuitive GUI that allows the user to do the primary tasks within 3-4 clicks or less
+- The delay of the system must not go beyond 500ms and should be below 250ms optimally
+- The system should deploy control systems that can self correct Surge
+- The system should support remote trouble shooting
+- The system should support remote surgeries
+- Surge should be lightweight
+- The cabling/networking of the system should be controlled
+- Surge must be shock resistant
+- Surge must be able to handle being regularly sanitized
+- The system must be cost efficient and each Surge unit should not exceed 500k in costs
+- Surge must be relatively mobile and small sized
+  
+**Constraints:**
+- Must be secure
+- Must have privacy: footage of the surgery must never be released or used without consent or necessity
+- The system must conform to the medical standards around the world
 
 # Requirements Classification
 ## User Requirements
