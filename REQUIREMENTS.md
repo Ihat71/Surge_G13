@@ -11,97 +11,97 @@
 
 ## 1. Mandatory (M)
 
-- The robotic arms must have the capability of being precise to less than 0.5mm
+- The robotic arms must have the capability of being precise to less than 0.5mm.
  *Reason:* higher precision is important for safe and accurate surgeries.
 
 - There must be a safe emergency stop system that is instantaneous.
- *Reason:*An emergency stop system is required to immediately shut-down all movements in case of any malfunction.  
+ *Reason:* An emergency stop system is required to immediately shut-down all movements in case of any malfunction.  
 
 - Surge must have 3 arms, a base, a computer, a controller, displays, a pilot and co-pilot seat.
- *Reason:*these are the main physical components required for the robot to operate.
+ *Reason:* these are the main physical components required for the robot to operate.
 
 - The camera must have x-y-z movement and can be fastened in position
- *Reason:*full 3-axis movement and position stability is important for accurate visual sighting.
+ *Reason:* full 3-axis movement and position stability is important for accurate visual sighting.
 
 - The joints of Surge must have gold standard brushless stepper motors
- *Reason:*Brushless motor is a high performance motor with high speed rotation and smaller in size,which makes it perfect for smooth and accurate motion.
+ *Reason:* Brushless motor is a high performance motor with high speed rotation and smaller in size,which makes it perfect for smooth and accurate motion.
 
 - Surge must have the needed IMUs such as gyros, accelerometers and etc. to maximize its Degrees of Freedom.
- *Reason:*Inertial Measurement Unit is an electronic sensor device that measures and reports body's specific force and angular rate which is important for fast and responsive arm movement.
+ *Reason:* Inertial Measurement Unit is an electronic sensor device that measures and reports body's specific force and angular rate which is important for fast and responsive arm movement.
 
 - Surge must have all the tools required for surgery.
- *Reason:*essential for successful surgeries. 
+ *Reason:* essential for successful surgeries. 
 
 - Surge must be able to cycle between the different tools.
- *Reason:*to eliminate manual intervention.
+ *Reason:* to eliminate manual intervention.
 
 - The structure of the controller of the arms should be similar to the structure of the arm, with pinchers at the top that would permit the arm to do its action.
- *Reason:*The arm controller mirroring the actual arm allows the surgeon to perform accurately naturally.
+ *Reason:* The arm controller mirroring the actual arm allows the surgeon to perform accurately naturally.
 
 - The controller must have gold standard encoders.
- *Reason:*essential for accurate and fast data conversion from physical surgeon controller movement to the arm.
+ *Reason:* essential for accurate and fast data conversion from physical surgeon controller movement to the arm.
 
 - The controller must have low signal noise even with small dead-zones.
- *Reason:*To ensure high accuracy of data transfer with minimal noise interruption. 
+ *Reason:* To ensure high accuracy of data transfer with minimal noise interruption. 
 
 - Surge must handle edge cases where the controller suddenly moves too much in a short time due to accidents.
- *Reason:*To prevent unwanted large movement that can harm the beloved patient.
+ *Reason:* To prevent unwanted large movement that can harm the beloved patient.
 
 - The surgeon must have a display in which he can see through the lens of the camera.
- *Reason:*Allows the surgeon to be more aware of the operation.
+ *Reason:* Allows the surgeon to be more aware of the operation.
 
 - Both the surgeon and assistant surgeon need an emergency stop button.
- *Reason:*To ensure safety in case of any malfunction.
+ *Reason:* To ensure safety in case of any malfunction.
 
 - The assistant surgeon must have a controller to set up the position of the camera.
- *Reason:*avoids interruption with main surgeons operation since the assistant handles the camera positions.
+ *Reason:* avoids interruption with main surgeons operation since the assistant handles the camera positions.
 
 - The software must provide useful analytics of estimated blood loss, estimated size of the region of surgery and etc.
- *Reason:*To ensure the safety of the patient while being operated on and increases success rate.
+ *Reason:* To ensure the safety of the patient while being operated on and increases success rate.
 
 - The software must have intuitive GUI that allows the user to do the primary tasks within 3-4 clicks or less
- *Reason:*intuitive Graphical User interface, a clear and efficient interface reduces human error and speeds up the progress.
+ *Reason:* intuitive Graphical User interface, a clear and efficient interface reduces human error and speeds up the progress.
 
 - The delay of the system must not go beyond 500ms and should be below 250ms optimally
- *Reason:*Response time for surgical robots is very crucial, this feature allows fast response time and minimizes delay.
+ *Reason:* Response time for surgical robots is very crucial, this feature allows fast response time and minimizes delay.
 
 - Surge should be lightweight.
- *Reason:*allows adaptability.
+ *Reason:* allows adaptability.
 
 - The cabling/networking of the system should be controlled
- *Reason:*to prevent accidental disconnection and tangling of the wires.
+ *Reason:* to prevent accidental disconnection and tangling of the wires.
 
 - Surge must be shock resistant
- *Reason:*Allows the Robot to be strong enough to sustain minor impact without damaging the internal components which increases safety.
+ *Reason:* Allows the Robot to be strong enough to sustain minor impact without damaging the internal components which increases safety.
 
 - Surge must be able to handle being regularly sanitized.
- *Reason:*To ensure hygienic and sanitized environment for our dear patients.
+ *Reason:* To ensure hygienic and sanitized environment for our dear patients.
 
 - The system must be cost efficient and each Surge unit should not exceed 500k in costs
- *Reason:*So that even low end Hospitals will be able to afford it, since everybody deserves the best (surge).
+ *Reason:* So that even low end Hospitals will be able to afford it, since everybody deserves the best (surge).
 
 - Surge must be relatively mobile and small sized
- *Reason:*essential for maneuverability around the surgical bed.
+ *Reason:* essential for maneuverability around the surgical bed.
 
 
 ## 2. Nice To Have (N)
 
 - The area of surgery must be displayed in the operating room.
- *Reason:*provides helpful visual feedback for the assistants and surgical team, but overall not essential. 
+ *Reason:* provides helpful visual feedback for the assistants and surgical team, but overall not essential. 
 
 - The surgeon must have a pedal system that he can zoom in and out of the camera.
- *Reason:*Allows the surgeon to put hand-focus fully on the arm controller however the zoom in/out functionality can still be controlled by other means if necessary. 
+ *Reason:* Allows the surgeon to put hand-focus fully on the arm controller however the zoom in/out functionality can still be controlled by other means if necessary. 
 
 - The surgeon must have a scroll wheel to control the rail.
 - Surge should be fastened to a rail system that allows it to move around the surgery bed.
- *Reason:*A rail that can move around and is controlled by a scroll wheel can increase workspace flexibility and reduces setup time, making work easier for the surgical staff but the robot can still function as good without it.
+ *Reason:* A rail that can move around and is controlled by a scroll wheel can increase workspace flexibility and reduces setup time, making work easier for the surgical staff but the robot can still function as good without it.
 
 - The system should deploy control systems that can self correct Surge
- *Reason:*improves reliability and performance but not strictly necessary for operation. 
+ *Reason:* improves reliability and performance but not strictly necessary for operation. 
 
 - The system should support remote trouble shooting
 - The system should support remote surgeries
- *Reason:*Allows top surgeons and top engineers to operate/fix issues from long distances however the system can still work in other ways.
+ *Reason:* Allows top surgeons and top engineers to operate/fix issues from long distances however the system can still work in other ways.
 
 
 ## 3.Superfluous (S)
@@ -280,35 +280,35 @@ Very High this is the most important feature for safety.
 
 ## 1. Mandatory (M)
 
--The Robot must include an additional control for the camera to enable zoom in/out functionality.
+- The Robot must include an additional control for the camera to enable zoom in/out functionality.
 *Reason:* to allow the Doctor to have full control over the camera.
 
--The camera should have a built-in light source.
+- The camera should have a built-in light source.
 *Reason:* To provide clear visibility of the area being operated on.
 
--The robot must include an emergency stop system.
+- The robot must include an emergency stop system.
 *Reason:*in case something fails to work the robot will shutdown immediately.
 
 
 ## 2. Nice To Have (N)
 
--The robot shall provide an integrated Intraoperative Ultrasound that gives real-time information needed.
+- The robot shall provide an integrated Intraoperative Ultrasound that gives real-time information needed.
 *Reason:* dangerous tumors can be hidden but with IOUS it can easily be visualized and identified.
 
--The robot shall support telecommunication features that enable remote telesurgery.
+- The robot shall support telecommunication features that enable remote telesurgery.
 *Reason:* This allows top surgeons perform surgical operations from different locations with real-time control, as if physically present in the room.
 
--The control interface should be made with Anti-vibration materials to ensure maximum stability and precision.
+- The control interface should be made with Anti-vibration materials to ensure maximum stability and precision.
 *Reason:* This feature minimizes unwanted motion, making the robot as steady and accurate as possible, mainly useful for older surgeons with less steady hand control.
 
 
 ## 3.Superfluous (S)
 
--the robot shall analyze patient’s blood to determine safe / correct amount of anesthesia dosage.
+- the robot shall analyze patient’s blood to determine safe / correct amount of anesthesia dosage.
 *Reason:* Unnecessary, usually done by the anesthesiologists.
 
--the robot shall be able to store data for each patient who undergoes surgery.
+- the robot shall be able to store data for each patient who undergoes surgery.
 *Reason:* increases complexity and requires an additional storage hardware and data management.
 
--The robot shall have a friendly, smiley appearance to make it look less scary for the patients.
+- The robot shall have a friendly, smiley appearance to make it look less scary for the patients.
 *Reason:* completely extra, and its only for aesthetic.
