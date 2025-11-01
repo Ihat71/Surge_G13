@@ -1,5 +1,115 @@
 # REQUIREMENTS.md
 
+## Raw Requirements Prioritization
+
+### Role: Requirements Prioritization Analyst
+**Task:** prioritize all project requirements into 3 categories with reasoning:
+- **Mandatory (M)** - Must be included for the project to function properly.
+- **Nice To Have (N)** - Adds value, and desirable but not essential.
+- **Superfluous (S) ** - Extra and unnecessary for the project goal and feasibility.
+
+
+## 1. Mandatory (M)
+
+- The robotic arms must have the capability of being precise to less than 0.5mm
+*Reason:* higher precision is important for safe and accurate surgeries.
+
+-There must be a safe emergency stop system that is instantaneous.
+*Reason:*An emergency stop system is required to immediately shut-down all movements in case of any malfunction.  
+
+-Surge must have 3 arms, a base, a computer, a controller, displays, a pilot and co-pilot seat.
+*Reason:*these are the main physical components required for the robot to operate.
+
+-The camera must have x-y-z movement and can be fastened in position
+*Reason:*full 3-axis movement and position stability is important for accurate visual sighting.
+
+-The joints of Surge must have gold standard brushless stepper motors
+*Reason:*Brushless motor is a high performance motor with high speed rotation and smaller in size,which makes it perfect for smooth and accurate motion.
+
+-Surge must have the needed IMUs such as gyros, accelerometers and etc. to maximize its Degrees of Freedom.
+*Reason:*Inertial Measurement Unit is an electronic sensor device that measures and reports body's specific force and angular rate which is important for fast and responsive arm movement.
+
+-Surge must have all the tools required for surgery.
+*Reason:*essential for successful surgeries. 
+
+-Surge must be able to cycle between the different tools.
+*Reason:*to eliminate manual intervention.
+
+-The structure of the controller of the arms should be similar to the structure of the arm, with pinchers at the top that would permit the arm to do its action.
+*Reason:*The arm controller mirroring the actual arm allows the surgeon to perform accurately naturally.
+
+-The controller must have gold standard encoders.
+*Reason:*essential for accurate and fast data conversion from physical surgeon controller movement to the arm.
+
+-The controller must have low signal noise even with small dead-zones.
+*Reason:*To ensure high accuracy of data transfer with minimal noise interruption. 
+
+-Surge must handle edge cases where the controller suddenly moves too much in a short time due to accidents.
+*Reason:*To prevent unwanted large movement that can harm the beloved patient.
+
+-The surgeon must have a display in which he can see through the lens of the camera.
+*Reason:*Allows the surgeon to be more aware of the operation.
+
+-Both the surgeon and assistant surgeon need an emergency stop button.
+*Reason:*To ensure safety in case of any malfunction.
+
+-The assistant surgeon must have a controller to set up the position of the camera.
+*Reason:*avoids interruption with main surgeons operation since the assistant handles the camera positions.
+
+-The software must provide useful analytics of estimated blood loss, estimated size of the region of surgery and etc.
+*Reason:*To ensure the safety of the patient while being operated on and increases success rate.
+
+-The software must have intuitive GUI that allows the user to do the primary tasks within 3-4 clicks or less
+*Reason:*intuitive Graphical User interface, a clear and efficient interface reduces human error and speeds up the progress.
+
+The delay of the system must not go beyond 500ms and should be below 250ms optimally
+*Reason:*Response time for surgical robots is very crucial, this feature allows fast response time and minimizes delay.
+
+-Surge should be lightweight.
+*Reason:*allows adaptability.
+
+-The cabling/networking of the system should be controlled
+*Reason:*to prevent accidental disconnection and tangling of the wires.
+
+-Surge must be shock resistant
+*Reason:*Allows the Robot to be strong enough to sustain minor impact without damaging the internal components which increases safety.
+
+-Surge must be able to handle being regularly sanitized.
+*Reason:*To ensure hygienic and sanitized environment for our dear patients.
+
+-The system must be cost efficient and each Surge unit should not exceed 500k in costs
+*Reason:*So that even low end Hospitals will be able to afford it, since everybody deserves the best (surge).
+
+-Surge must be relatively mobile and small sized
+*Reason:*essential for maneuverability around the surgical bed.
+
+
+## 2. Nice To Have (N)
+
+-The area of surgery must be displayed in the operating room.
+*Reason:*provides helpful visual feedback for the assistants and surgical team, but overall not essential. 
+
+-The surgeon must have a pedal system that he can zoom in and out of the camera.
+*Reason:*Allows the surgeon to put hand-focus fully on the arm controller however the zoom in/out functionality can still be controlled by other means if necessary. 
+
+-The surgeon must have a scroll wheel to control the rail.
+-Surge should be fastened to a rail system that allows it to move around the surgery bed.
+*Reason:*A rail that can move around and is controlled by a scroll wheel can increase workspace flexibility and reduces setup time, making work easier for the surgical staff but the robot can still function as good without it.
+
+-The system should deploy control systems that can self correct Surge
+*Reason:*improves reliability and performance but not strictly necessary for operation. 
+
+-The system should support remote trouble shooting
+-The system should support remote surgeries
+*Reason:*Allows top surgeons and top engineers to operate/fix issues from long distances however the system can still work in other ways.
+
+
+## 3.Superfluous (S)
+
+
+
+
+
 ## Table of Contents
 - [Requirement Elicitation](#requirement-elicitation)
 - [Requirements Classification](#requirements-classification)
@@ -22,7 +132,7 @@ The team behind Surge have held, and will continue holding in the future, consis
 - Surge must have 3 arms, a base, a computer, a controller, displays, a pilot and co-pilot seat
 - The camera must have x-y-z movement and can be fastened in position
 - The joints of Surge must have gold standard brushless stepper motors
-- Surge must have the needed IMUs such as gyros, accelerometers and etc to maximise its Degrees of Freedom
+- Surge must have the needed IMUs such as gyros, accelerometers and etc. to maximize its Degrees of Freedom
 - Surge must have all the tools required for surgery
 - Surge must be able to cycle between the different tools
 - The structure of the controller of the arms should be similar to the structure of the arm, with pinchers at the top that would permit the arm to do its action
