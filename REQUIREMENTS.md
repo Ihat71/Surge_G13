@@ -249,13 +249,13 @@ Very High this is the most important feature for safety.
   
 ## 2. Nice To Have (N)
 
-- The robot shall provide an integrated Intraoperative Ultrasound that gives real-time information needed.
+- The robot shall provide an integrated Intraoperative Ultrasound that gives real-time information needed.  
 *Reason:* dangerous tumors can be hidden but with IOUS it can easily be visualized and identified.
 
-- The robot shall support telecommunication features that enable remote telesurgery.
+- The robot shall support telecommunication features that enable remote telesurgery.  
 *Reason:* This allows top surgeons perform surgical operations from different locations with real-time control, as if physically present in the room.
 
-- The control interface should be made with Anti-vibration materials to ensure maximum stability and precision.
+- The control interface should be made with Anti-vibration materials to ensure maximum stability and precision.  
 *Reason:* This feature minimizes unwanted motion, making the robot as steady and accurate as possible, mainly useful for older surgeons with less steady hand control.
 
 - The area of surgery must be displayed in the operating room.  
@@ -277,11 +277,11 @@ Very High this is the most important feature for safety.
 
 ## 3.Superfluous (S)
 
-- The robot shall analyze patient’s blood to determine safe / correct amount of anesthesia dosage.
+- The robot shall analyze patient’s blood to determine safe / correct amount of anesthesia dosage.  
 *Reason:* Unnecessary, usually done by the anesthesiologists.
 
-- The robot shall be able to store data for each patient who undergoes surgery.
+- The robot shall be able to store data for each patient who undergoes surgery.  
 *Reason:* increases complexity and requires an additional storage hardware and data management.
 
-- The robot shall have a friendly, smiley appearance to make it look less scary for the patients.
+- The robot shall have a friendly, smiley appearance to make it look less scary for the patients.  
 *Reason:* completely extra, and its only for aesthetic.
