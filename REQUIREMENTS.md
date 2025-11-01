@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Requirement Elicitation](#requirement-elicitation)
-- [Requirement Classification](#requirement-classification)
+- [Requirements Classification](#requirements-classification)
 - [Structured Specification](#structured-specification)
 - [Requirements Prioritization](#project-requirements-prioritization)
 
