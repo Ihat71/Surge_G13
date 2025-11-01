@@ -1,15 +1,16 @@
 # REQUIREMENTS.md
 
 ## Table of Contents
-- [Requirement Elicitation](#requirement_elicitation)
-- [Requirement Classification](#requirement_classification)
-- [Structured Specification](#structured_specification)
-- [Requirements Prioritization](#project_requirements_prioritization)
+- [Requirement Elicitation](#requirement-elicitation)
+- [Requirement Classification](#requirement-classification)
+- [Structured Specification](#structured-specification)
+- [Requirements Prioritization](#project-requirements-prioritization)
 
 # Requirement Elicitation
 **Chosen elicitation techniques:** Brainstorming and Interviewing
 ## Elicitation Documentation
 ### Brainstorming Session 
+The team behind Surge have held, and will continue holding in the future, consistent meetings for the future of Surge. Of our meetings, we have had a handful discussing the needed requirements behind building such an ambitious project. Most of the requirements discussed in this documents have been born out of these brainstorming sessions. We do realise that it is imperative to ask experienced surgeons to review our proposed requirements based on their expertice, and that is why we have chosen interviews as our second elicitation technique. 
 
 ### Interviews With Surgeons 
 
@@ -17,14 +18,17 @@
 **Services:**
 - The robotic arms must have the capability of being precise to less than 0.5mm
 - The area of surgery must be displayed in the operating room
-- There must be a safe emergency stop system that is instant
-- Surge must have 3 arms, a base, a computer, a controller, displays and a co-pilot seat
+- There must be a safe emergency stop system that is instantaneous
+- Surge must have 3 arms, a base, a computer, a controller, displays, a pilot and co-pilot seat
 - The camera must have x-y-z movement and can be fastened in position
 - The joints of Surge must have gold standard brushless stepper motors
+- Surge must have the needed IMUs such as gyros, accelerometers and etc to maximise its Degrees of Freedom
 - Surge must have all the tools required for surgery
 - Surge must be able to cycle between the different tools
-- The controller of the arms should be in a way similar to the structure of the arm, with pinchers at the top that would permit the arm to do its action
+- The structure of the controller of the arms should be similar to the structure of the arm, with pinchers at the top that would permit the arm to do its action
 - The controller must have gold standard encoders
+- The controller must have low signal noise even with small deadzones
+- Surge must handle edge cases where the controller suddenly moves too much in a short time due to accidents 
 - Surge should be fastened to a rail system that allows it to move around the surgery bed
 - The surgeon must have a display in which he can see through the lens of the camera
 - The surgeon must have a pedal system that he can zoom in and out of the camera
@@ -51,10 +55,55 @@
 
 # Requirements Classification
 ## User Requirements
+- The robot has to be smooth, strong, sanitizable and lightweight
+- The robot has 3 arms, one of them being a camera
+- Surgeon can see the display
+- Surgeon has a pedal to zoom in
+- Surgeon and assistant surgeon have an emergency stop
+- Assistant surgeon must have the camera's controller
+- The software GUI must be intuitive and fast
+- The controller must be smooth
+- Surge's joints must be precise, smooth and strong
+- The operation room must display the surgery for the assistant surgeon to have a better perspective
+- The software must be able to give useful analytics to the surgeons
 ## System Requirements
 ### Functional Requirements
+- The area of surgery must be displayed in the operating room
+- There must be a safe emergency stop system that is instant
+- Surge must have all the tools required for surgery
+- Surge must be able to cycle between the different tools
+- The camera must have x-y-z movement and can be fastened in position
+- The surgeon must have a display in which he can see through the lens of the camera
+- The controller must have low signal noise even with small deadzones
+- The surgeon must have a pedal system that he can zoom in and out of the camera
+- The surgeon must have a scroll wheel to control the rail
+- Both the surgeon and assistant surgeon need an emergency stop button
+- The assistant surgeon must have a controller to set up the position of the camera
+- The software must provide useful analytics of estimated blood loss, estimated size of the region of surgery and etc
+- The system should deploy control systems that can self correct Surge
+- The system should support remote trouble shooting
+- The system should support remote surgeries
+- The cabling/networking of the system should be controlled
 ### Non-Functional Requirements
-
+- The robotic arms must have the capability of being precise to less than 0.5mm
+- The area of surgery must be displayed in the operating room (also functional — but precision/quality part makes it NFR too)
+- Surge must have 3 arms, a base, a computer, a controller, displays and a co-pilot seat
+- The joints of Surge must have gold standard brushless stepper motors
+- The controller of the arms should be in a way similar to the structure of the arm, with pinchers at the top that would permit the arm to do its action
+- The controller must have gold standard encoders
+- Surge must handle edge cases where the controller suddenly moves too much in a short time due to accidents 
+- Surge should be fastened to a rail system that allows it to move around the surgery bed
+- The software must have intuitive GUI that allows the user to do the primary tasks within 3-4 clicks or less
+- The delay of the system must not go beyond 500ms and should be below 250ms optimally
+- Surge should be lightweight
+- Surge must be shock resistant
+- Surge must be able to handle being regularly sanitized
+- The system must be cost efficient and each Surge unit should not exceed 500k in costs
+- Surge must be relatively mobile and small sized
+### Constraints
+- Must be secure
+- Must have privacy: footage of the surgery must never be released or used without consent or necessity
+- The system must conform to the medical standards around the world
 
 # Structured Specification
 ## Functional Requirement 1: Precise Control of Robotic Arms
