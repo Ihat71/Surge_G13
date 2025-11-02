@@ -104,5 +104,8 @@
 ***End:*** The visual shown in the surgeon's FPV is changed based on the desired zoom level.    
 ***Alternatives:***    
 		1. surgeon holds pedal, pedal sends continuous signal and zoom continues gradually until limit is reached    
-		5. if limit is reached, the system stops sending commands     
+		5. if limit is reached, the system stops sending commands
+
+**DIAGRAM:**
+![Robot System Use Case](assets/UC_diagram.png)
 	
