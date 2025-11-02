@@ -1,4 +1,4 @@
-**SYSTEM:**
+**System:**
 -
 Surgical Robot System 
 
@@ -6,11 +6,11 @@ Surgical Robot System
 -
 this document describes the main actors and use cases needed for Surge's robot system   
 
-**ACTORS:**
+**Actors:**
 -
 Primary Surgeon, Assistant Surgeon, Tool Shifting System, Visual System, Control System, Security System 
 
-**USE-CASES:**  
+**Use-Cases:**  
 -
 
  1. ***UC1:*** Arm movements   
@@ -116,7 +116,7 @@ Primary Surgeon, Assistant Surgeon, Tool Shifting System, Visual System, Control
 		1. surgeon holds pedal, pedal sends continuous signal and zoom continues gradually until limit is reached    
 		5. if limit is reached, the system stops sending commands
 
-**DIAGRAM:**
+**Diagram:**
 -
 ![Robot System Use Case](assets/UC_diagram.png)
 	
