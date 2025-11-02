@@ -67,3 +67,42 @@
 	***Alternative:***    
 			3. button fails to send signal, security system triggers hard shutdown       
 			4. if button is pressed accidentally and 'continue operation' is chosen, the robot system asks for confirmation then reactivates and continues operation       
+
+5. ***UC5:*** Tool shifting    
+	***Actors:*** Assistant Surgeon, Tool Changin System     
+	***Description:*** to be able to use different tools during the procedure, the user can switch the tools on the robot arm     
+	***Start:*** Robot is turned on   
+	***Normal Flow:***    
+			1. Assistant surgeon presses the required tool from the GUI    
+			2. GUI asks for confirmation    
+			3. The robot arms retreat to a safe positon      
+			4. Tool changing system processes which tool was requested and it's location    
+			5. System checks which subslot of that tool can be used    
+			6. The tool changing system retreats the tool in use      
+			7. The system advances the requested tool to the arm    
+			8. the arms are released from safety position to continue operation   
+		***End:*** robot arm has new tool in use   
+		***Alternative:***    
+				2. if confirmation fails, operation continues with no effect    
+				3. if arms aren't retreated to safety position, all arm movement is halted   
+				4. if requested tool's slot is empty, message is displayed   
+				5. if no tools can be used, message is displayed asking confirmation to reuse the tool   
+			   
+6. ***UC6:*** Zooming camera in and out    
+	***Actors:*** 	Assistant Surgeon, Vison system    
+	***Description:*** allows the surgeon to move the camera closer to or further from the operation using foot pedals   
+	***Start:*** Robot is turned on, pedals are connected to robot system    
+	***Normal Flow:***   
+			1. Primary Surgeon presses a foot pedal  
+			2. The pedal senses a signal and measures the pressure of the push    
+			3. It sends the signal to the vision system   
+			4. The vision system processes the signal as zooming in or out    
+			5. The system commands the camera to adjust the zoom level accordingly    
+			6. The camera zooms in/out based on the pressure exerted on the pedal     
+			7. Surgeon releases foot pedal     
+			8. The vision system stops changing the zoom level and fixes camera on the last held level   
+***End:*** The visual shown in the surgeon's FPV is changed based on the desired zoom level.    
+***Alternatives:***    
+		1. surgeon holds pedal, pedal sends continuous signal and zoom continues gradually until limit is reached    
+		5. if limit is reached, the system stops sending commands     
+	
