@@ -1,7 +1,17 @@
-**SYSTEM:**  Surgical Robot System   
-**Description:** this document describes the main actors and use cases needed for Surge's robot system   
-**ACTORS:** Primary Surgeon, Assistant Surgeon, Tool Shifting System, Visual System, Control System, Security System   
-**USE-CASES:**    
+**SYSTEM:**
+-
+Surgical Robot System 
+
+**Description:**
+-
+this document describes the main actors and use cases needed for Surge's robot system   
+
+**ACTORS:**
+-
+Primary Surgeon, Assistant Surgeon, Tool Shifting System, Visual System, Control System, Security System 
+
+**USE-CASES:**  
+-
 
  1. ***UC1:*** Arm movements   
 	 ***Actors:*** Primary Surgeon, Vision System   
@@ -107,5 +117,6 @@
 		5. if limit is reached, the system stops sending commands
 
 **DIAGRAM:**
+-
 ![Robot System Use Case](assets/UC_diagram.png)
 	
