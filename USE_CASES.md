@@ -118,5 +118,5 @@ Primary Surgeon, Assistant Surgeon, Tool Shifting System, Visual System, Control
 
 **Diagram:**
 -
-![Robot System Use Case](assets/UC_diagram.png)
+![Robot System Use Case](assets/use-case_diagram_new.png)
 	
