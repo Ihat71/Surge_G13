@@ -152,20 +152,23 @@ High poor video could make the operation unsafe.
 **Requirement ID:** FR-03
 
 **Description:**
-The robot must have a safety system that can stop all movement right away if something goes wrong or if the surgeon presses the emergency stop.
-
+The system must include strong software security to protect all patient data, operation records, and system controls from unauthorized access or tampering.
 **Rationale:**
-This prevents accidents and keeps the patient and surgeon safe.
-- A signal from the emergency stop button or voice command.
-- Data from sensors that detect any problems, like too much force.
-- An alarm sounds and flashes to warn the team.
-- The robot is running and ready for surgery.
-- Emergency systems must be checked and working.
-- The robot stops safely and cuts power to its motors.
-- It can only restart after the issue is fixed.
+This ensures that sensitive medical information and robot operations remain safe from hacking, misuse, or data loss, keeping both patients and hospital systems secure.
+-	Login credentials and authentication data from authorized users.
+-	Encrypted communication between the robot and control console.
+-	Security checks for external device or network access.
+-	Encrypted data storage for all operation logs and patient details.
+-	Access alerts and logs for all user activities.
+-	Automatic session timeout and system lock after inactivity.
+-	The system is connected to a secure hospital network.
+-	User accounts and permissions are properly configured.
+-	All operational and patient data remains encrypted and protected.
+-	Unauthorized login attempts trigger an alert or system lockdown.
+
   
 **Criticality:**
-Very High this is the most important feature for safety.
+Very High software security is important to maintain patient privacy, data integrity, and safe robot operation.
 
 # Project Requirements Prioritization
 **Task:** prioritize all project requirements into 3 categories with reasoning:
