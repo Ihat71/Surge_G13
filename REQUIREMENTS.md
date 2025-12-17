@@ -69,7 +69,6 @@ The team behind Surge have held, and will continue holding in the future, consis
 - The operation room must display the surgery for the assistant surgeon to have a better perspective
 - The software must be able to give useful analytics to the surgeons
 ## System Requirements
-### Functional Requirements
 - The area of surgery must be displayed in the operating room
 - There must be a safe emergency stop system that is instant
 - Surge must have all the tools required for surgery
@@ -87,8 +86,7 @@ The team behind Surge have held, and will continue holding in the future, consis
 - The system should support remote surgeries
 - The cabling/networking of the system should be controlled
 - The robot shall analyze patient’s blood to determine safe / correct amount of anesthesia dosage
-- The robot shall be able to store data for each patient who undergoes surgery.
-### Non-Functional Requirements
+- The robot shall be able to store data for each patient who undergoes surgery
 - The robotic arms must have the capability of being precise to less than 0.5mm
 - The area of surgery must be displayed in the operating room (also functional — but precision/quality part makes it NFR too)
 - Surge must have 3 arms, a base, a computer, a controller, displays and a co-pilot seat
@@ -109,6 +107,50 @@ The team behind Surge have held, and will continue holding in the future, consis
 - Must be secure
 - Must have privacy: footage of the surgery must never be released or used without consent or necessity
 - The system must conform to the medical standards around the world
+
+## Functional Requirements
+
+-The area of surgery must be displayed in the operating room.
+-There must be a safe emergency stop system.
+-Surge must have 3 arms, a base, a computer, a controller, displays, and pilot and co-pilot seats.
+-The camera must have x-y-z movement and be able to be fastened in position.
+-Surge must have all the tools required for surgery.
+-Surge must be able to cycle between different surgical tools.
+-Surge must handle edge cases where the controller suddenly moves excessively due to accidents.
+-Surge should be fastened to a rail system that allows it to move around the surgery bed.
+-The surgeon must have a display that shows the camera feed.
+-The surgeon must have a pedal system to zoom the camera in and out.
+-The surgeon must have a scroll wheel to control the rail system.
+-Both the surgeon and assistant surgeon must have an emergency stop button.
+-The assistant surgeon must have a controller to set up and position the camera.
+-The software must provide analytics such as estimated blood loss and estimated surgery region size.
+-The system should deploy control systems that can self-correct Surge during operation.
+-The system should support remote troubleshooting.
+-The system should support remote surgeries.
+-The robot shall analyze the patient’s blood to determine safe anesthesia dosage.
+-The robot shall be able to store data for each patient who undergoes surgery.
+
+## Non Functional Requirements
+
+-The robotic arms must have precision better than 0.5 mm.
+-The emergency stop system must be instantaneous.
+-The joints of Surge must use gold-standard brushless stepper motors.
+-Surge must include IMUs such as gyroscopes and accelerometers to maximize degrees of freedom.
+-The controller structure should mirror the arm structure with pinchers at the top.
+-The controller must have gold-standard encoders.
+-The controller must have low signal noise, even with small dead zones.
+-The software must have an intuitive GUI allowing primary tasks within 3–4 clicks.
+-The system delay must not exceed 500 ms and should ideally be below 250 ms.
+-Surge should be lightweight.
+-The cabling and networking of the system should be well-controlled.
+-Surge must be shock-resistant.
+-Surge must be able to handle regular sanitization.
+-Each Surge unit must not exceed a cost of 500k.
+-Surge must be relatively mobile and small in size.
+-The robot should have a friendly, smiley appearance to reduce patient fear.
+-The system must be secure.
+-The system must ensure privacy; surgical footage must not be released without consent or necessity.
+-The system must conform to medical standards worldwide.
 
 # Structured Specification
 ## Functional Requirement 1: Precise Control of Robotic Arms
